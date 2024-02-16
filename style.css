@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    background-image: url(./images/background.jpg);
+    justify-content: center;
+}
+
+
+h1{
+    margin: 1rem 0;
+    font-family: 'Rosarivo', cursive;
+}
+
+.subtitulo{
+        font-style: italic;
+        padding: 10px;
+        background-color: #7e3086;
+        margin-bottom: 1.5rem;
+        font-family: 'Bungee Spice', cursive;
+        text-align: center; 
+        
+}
+
+h4{
+    font-family: 'Roboto Slab', serif;
+}
+header {
+    height: 12vh;
+    color: white;
+    display: flex;
+    background-color: rgb(126, 48, 134);
+    position: sticky;
+}
+
+
+footer {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    justify-content: end;
+    background-color: rgb(126, 48, 134);
+    color: white;
+    padding-right: 2rem;
+}
+
+.card {
+    min-height: 460px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(186, 161, 197);
+}
+.boton-compra{
+    display: flex;
+    justify-content: right;
+    margin-right: 1rem;
+    font-family: 'Roboto Slab', serif;
+}
+.compra{
+    text-align: right;
+    background-color: green;
+}
+.compra:hover{
+    background-color: rgb(9, 173, 9);
+}
+
+.buscador, .categoria{
+    background-color: rgb(186, 161, 197);
+}
+.btn-menor{
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.btn-mayor{
+    margin-top: -65px;
+}
+.mt-1{
+    margin-top: 1rem;
+}
+
+.btn-delete {
+    color: rgb(172, 40, 40);
+    cursor: pointer;
+}
+
+.p-2{
+    margin-top: 1.5rem;
+}
+
+
+
+

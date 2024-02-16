@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightSaber Store</title>
+    <!-- Enlaces de Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <!-- Librerías-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link rel="stylesheet" href="style.css">  
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- / Librerías-->
+    <!-- Hoja de Estilos-->
+    <link rel="stylesheet" href="style.css">
+    <!--Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-png">
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Scripts -->
+    <script src="carrito.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="d-flex justify-content-center p-4 text-light ">
+        <h1>LIGHTSABER STORE</h1>
+
+        </button>
+    </header>
+    <h2 class="subtitulo">¿Que quieres comprar?</h2>
+    <div class="boton-compra">
+        <button id="btnModalCarrito" type="button" class="btn btn-primary compra">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount" class="badge text-bg-dark">0</span>
+    </div>
+   
+    
+
+
+    <main  class="container mt-2">
+        <div class="row">
+            <div class="col-md-6">
+                <input id="inputSearch" type="search" class="form-control buscador" placeholder="🔍">
+            </div>
+            <div class="col-md-4">
+                <select id="selectCategory" class="form-control categoria">Selecciona una categoria</select>
+            <div class="col-md-1">
+                <button id="btnOrderMenos" type="button" class="btn btn-primary btn-menor">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
+            </div>
+            <div class="col-md-1">
+                <button id="btnOrderMas" type="button" class="btn btn-primary btn-mayor">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+        <div id="listProducts" class="row mt-2">
+
+            
+        </div>
+    </main>
+
+    <div id="modalCarrito" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fa-solid fa-cart-shopping"></i> Carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Total</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="modalListProducts">
+
+                        </tbody>
+                    
+                    </table>
+                    <hr>
+                    
+                    <p class="text-danger"> Total $ <span id="cartSum"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button id="btnClose" type="button" class="btn btn-secondary">Cerrar</button>
+                    <button id="btnSave"  type="submit" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> Matias Montalto</p>
+    </footer>
+</body>
+</html>
