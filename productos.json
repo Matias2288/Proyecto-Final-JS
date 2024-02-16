@@ -8,7 +8,7 @@
     { "id_product": 6, "name": "Darth Revan Lightsaber", "img": "images/Revan.png", "price": 80000, "id_category": 2 },
     { "id_product": 7, "name": "Mace Windu Lightsaber", "img": "images/Windu.png", "price": 93000, "id_category": 3 },
     { "id_product": 8, "name": "Conde Dooku Lightsaber", "img": "images/Dooku.png", "price": 105000, "id_category": 2 },
-    { "id_product": 9, "name": "Cal Kestis Lightsaber", "img": "images/cal.png", "price": 96000, "id_category": 3 },
+    { "id_product": 9, "name": "Cal Kestis Lightsaber", "img": "images/Cal.png", "price": 96000, "id_category": 3 },
     { "id_product": 10, "name": "Darth Maul Lightsaber", "img": "images/Maul.png", "price": 150000, "id_category": 2 },
     { "id_product": 11, "name": "Starkiller Lightsaber", "img": "images/Starkiller.png", "price": 105000, "id_category": 3 },
     { "id_product": 12, "name": "Grand Inquisitor Lightsaber", "img": "images/Inquisidor.png", "price": 115000, "id_category": 2 }
